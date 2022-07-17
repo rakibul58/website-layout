@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <script src="https://kit.fontawesome.com/3e76e76a24.js" crossorigin="anonymous"></script>
+    <style>
+        header nav{
+            display: flex;
+            justify-content: space-between;
+        }
+        .login-section{
+            display: flex;
+            justify-content: center;
+        }
+        .login-form{
+            display: flex;
+            flex-direction: column;
+            width: 300px;
+            margin-top: 50px;
+        }
+
+        .login-form input{
+            margin-top: 10px;
+            font-size: 2.5ex;
+            padding-top: 5px;
+            padding-bottom: 5px;
+            padding-left: 10px;
+            border-radius: 5px;
+        }
+
+        .login-form input[type="submit"]{
+            color: white;
+            background-color: blue;
+            font-weight: 700;
+            border: 1px solid white;
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
+        body{
+            margin: 0;
+        }
+        nav{
+            background-color: lightblue;
+            padding: 10px;
+        }
+        .span-2 a{
+            margin-right: 10px;
+            color: black;
+            font-weight: 700;
+            font-size: 1.5em;
+        }
+        .span-1 a{
+            margin-left: 10px;
+            text-decoration: none;
+            color: black;
+            font-weight: 700;
+            font-size: 1.5em;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <span class="span-1">
+                <a href="">Home</a>
+                <a href="">About Us</a>
+                <a href="">Contact</a>
+            </span>
+            <span class="span-2">
+                <a href=""><i class="fa-solid fa-right-from-bracket"></i></a>
+                <a href=""><i class="fa-solid fa-user"></i></a>
+            </span>
+        </nav>
+    </header>
+    <section class="login-section">
+        <form class="login-form">
+            <h2>Please Login</h2>
+            <input type="email" placeholder="Enter Your Email">
+            <input type="password" placeholder="Password">
+            <input type="submit" value="Login">
+        </form>
+    </section>
+</body>
+</html>
